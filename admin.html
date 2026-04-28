@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Admin - URBAN STYLE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="admin-layout">
+        <aside class="sidebar">
+            <div class="sidebar-logo">URBAN<span>STYLE</span></div>
+            <ul class="sidebar-menu">
+                <li><a href="#" class="active">Dashboard</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Pedidos</a></li>
+                <li><a href="#">Clientes</a></li>
+                <li><a href="#">Categorías</a></li>
+                <li><a href="#">Inventario</a></li>
+                <li><a href="#">Reportes</a></li>
+                <li><a href="#">Configuración</a></li>
+                <li><a href="index.html">Volver a la tienda</a></li>
+            </ul>
+        </aside>
+
+        <main class="admin-main">
+            <header class="admin-header">
+                <h1>Dashboard</h1>
+                <div class="admin-user">
+                    <span>Hola, Admin</span>
+                    <div class="avatar">A</div>
+                </div>
+            </header>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Ventas del mes</h3>
+                    <div class="value">$12,450</div>
+                    <div class="change">+15.3% vs mes anterior</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Pedidos</h3>
+                    <div class="value">328</div>
+                    <div class="change">+8.1% esta semana</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Productos</h3>
+                    <div class="value">156</div>
+                    <div class="change">12 nuevos este mes</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Clientes</h3>
+                    <div class="value">2,841</div>
+                    <div class="change">+124 nuevos</div>
+                </div>
+            </div>
+
+            <section class="admin-section">
+                <div class="section-header">
+                    <h2>Gestión de Productos</h2>
+                    <a href="#" class="btn btn-sm">+ Nuevo producto</a>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Producto</th>
+                            <th>Categoría</th>
+                            <th>Precio</th>
+                            <th>Stock</th>
+                            <th>Estado</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#001</td>
+                            <td>Camiseta Oversize Black</td>
+                            <td>Hombre</td>
+                            <td>$29.99</td>
+                            <td>45</td>
+                            <td><span class="badge badge-success">Activo</span></td>
+                            <td>
+                                <a href="#" class="action-btn btn-edit">Editar</a>
+                                <a href="#" class="action-btn btn-delete">Eliminar</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#002</td>
+                            <td>Vestido Floral Verano</td>
+                            <td>Mujer</td>
+                            <td>$45.50</td>
+                            <td>22</td>
+                            <td><span class="badge badge-success">Activo</span></td>
+                            <td>
+                                <a href="#" class="action-btn btn-edit">Editar</a>
+                                <a href="#" class="action-btn btn-delete">Eliminar</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#003</td>
+                            <td>Jeans Slim Fit Azul</td>
+                            <td>Hombre</td>
+                            <td>$59.90</td>
+                            <td>8</td>
+                            <td><span class="badge badge-warning">Stock bajo</span></td>
+                            <td>
+                                <a href="#" class="action-btn btn-edit">Editar</a>
+                                <a href="#" class="action-btn btn-delete">Eliminar</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#004</td>
+                            <td>Gorra Snapback Classic</td>
+                            <td>Accesorios</td>
+                            <td>$19.99</td>
+                            <td>0</td>
+                            <td><span class="badge badge-danger">Sin stock</span></td>
+                            <td>
+                                <a href="#" class="action-btn btn-edit">Editar</a>
+                                <a href="#" class="action-btn btn-delete">Eliminar</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#005</td>
+                            <td>Chaqueta Denim Oversized</td>
+                            <td>Mujer</td>
+                            <td>$79.00</td>
+                            <td>15</td>
+                            <td><span class="badge badge-success">Activo</span></td>
+                            <td>
+                                <a href="#" class="action-btn btn-edit">Editar</a>
+                                <a href="#" class="action-btn btn-delete">Eliminar</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="admin-section">
+                <div class="section-header">
+                    <h2>Pedidos Recientes</h2>
+                    <a href="#" class="btn btn-sm">Ver todos</a>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pedido</th>
+                            <th>Cliente</th>
+                            <th>Fecha</th>
+                            <th>Total</th>
+                            <th>Estado</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#1024</td>
+                            <td>María García</td>
+                            <td>27/04/2026</td>
+                            <td>$129.50</td>
+                            <td><span class="badge badge-success">Entregado</span></td>
+                            <td><a href="#" class="action-btn btn-edit">Ver</a></td>
+                        </tr>
+                        <tr>
+                            <td>#1023</td>
+                            <td>Carlos López</td>
+                            <td>26/04/2026</td>
+                            <td>$89.99</td>
+                            <td><span class="badge badge-warning">En camino</span></td>
+                            <td><a href="#" class="action-btn btn-edit">Ver</a></td>
+                        </tr>
+                        <tr>
+                            <td>#1022</td>
+                            <td>Ana Martínez</td>
+                            <td>26/04/2026</td>
+                            <td>$45.50</td>
+                            <td><span class="badge badge-warning">Procesando</span></td>
+                            <td><a href="#" class="action-btn btn-edit">Ver</a></td>
+                        </tr>
+                        <tr>
+                            <td>#1021</td>
+                            <td>Pedro Ramírez</td>
+                            <td>25/04/2026</td>
+                            <td>$215.00</td>
+                            <td><span class="badge badge-danger">Cancelado</span></td>
+                            <td><a href="#" class="action-btn btn-edit">Ver</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
